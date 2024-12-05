@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top">
+           <div class="top__bar">
+             <span class="top__logo">
+               <img src="./assets/logo.png" alt="">
+             </span>
+             <div class="top__location" onclick="openModal()">
+               <span>Deliver to </span>
+               <span class="top__location__country"><i class="fas fa-map-marker-alt"></i>
+                 <span>Uzbekistan</span>
+            </span>
+
+             </div>
+             <div class="top__search">
+               <select name="" id="" class="top__search__select">
+                 <option value="All">All</option>
+               </select>
+               <input type="text" placeholder="Search Amazon" class="top__search__input">
+               <button type="submit" class="top__search__btn">
+                 <i class="fas fa-search"></i>
+               </button>
+             </div>
+             <div class="top__language">
+               <span><img src="./assets/united-states.png" alt=""> EN</span>
+               <i class="fas fa-caret-down"></i>
+             </div>
+             <div class="top__account">
+               <span class="top__account__hello">Hello, sign in</span>
+               <span class="top__account__account">Account & Lists <i class="fas fa-caret-down"></i></span>
+             </div>
+             <div class="top__return">
+               <span class="top__return__returns">Returns</span>
+               <span class="top__return__orders">& Orders</span>
+             </div>
+             <div class="top__cart">
+                <span class="top__cart__counter">0</span>
+               <i class="fas fa-shopping-cart"></i>
+               Cart
+             </div>
+           </div>
+        </div>
+        <div class="body">
+            <div class="modal">
+                <div class="modal-header">
+                  <h2>Choose your location</h2>
+                  <p>Delivery options and delivery speeds may vary for different locations</p>
+                </div>
+                <div class="modal-body">
+                  <a href="#" class="manage-address">Manage address book</a>
+                  <div class="input-group">
+                    <input type="text" placeholder="or enter a US zip code">
+                    <button class="apply-button">Apply</button>
+                  </div>
+                  <p>or ship outside the US</p>
+                  <select class="sellect">
+                    <option>Uzbekistan</option>
+                    <option>Kazakhstan</option>
+                    <option>Kyrgyzstan</option>
+                    <option>Tajikistan</option>
+                  </select>
+                </div>
+                <div class="modal-footer">
+                  <button class="done-button" onclick="closeModal()">Done</button>
+                </div>
+              </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="head">
+              <h2>Hello, Sign in</h2>
+            </div>
+            <button onclick="removeSidebar()" class="close__menu__btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="section">
+              <h3>Digital Content & Devices</h3>
+              <ul>
+                <li><a href="#">Amazon Music</a></li>
+                <li><a href="#">Kindle E-readers & Books</a></li>
+                <li><a href="#">Amazon Appstore</a></li>
+              </ul>
+            </div>
+            <div class="section">
+              <h3>Shop by Department</h3>
+              <ul>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Smart Home</a></li>
+                <li><a href="#">Arts & Crafts</a></li>
+                <li><a href="#">See all</a></li>
+              </ul>
+            </div>
+            <div class="section">
+              <h3>Programs & Features</h3>
+              <ul>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Shop By Interest</a></li>
+                <li><a href="#">Amazon Live</a></li>
+                <li><a href="#">International Shopping</a></li>
+                <li><a href="#">See all</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="nav-bar">
+            <div class="nav-left">
+              <button class="menu-button" onclick="showSidebar()">&#9776; All</button>
+            </div>
+            <div class="nav-right">
+              <a href="#">Today's Deals</a>
+              <a href="#">Buy Again</a>
+              <a href="#">Customer Service</a>
+              <a href="#">Registry</a>
+              <a href="#">Gift Cards</a>
+              <a href="#">Sell</a>
+            </div>
+          </div>
+    
+        
+          
+    </header>
+    <div class="amazon-section">
+        <div class="section-header">
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <h2>Small gifts under $20</h2>
+                <img src="./assets/category20$.png" alt="Small gifts">
+                <a href="">Shop now</a>
+            </div>
+            <div class="card">
+                <h2>Deals in PCs</h2>
+                <img src="./assets/categoryPC.png" alt="Deals in PCs">
+                <a href="">Shop now</a>
+            </div>
+            <div class="card">
+                <h2>Shop for your home essentials</h2>
+                <div class="grid">
+                    <div>
+                        <img src="./assets/cleaningTools.png" alt="Cleaning Tools">
+                        <p>Cleaning Tools</p>
+                    </div>
+                    <div>
+                        <img src="./assets/homeStorage.png" alt="Home Storage">
+                        <p>Home Storage</p>
+                    </div>
+                    <div>
+                        <img src="./assets/homeDecor.png" alt="Home Decor">
+                        <p>Home Decor</p>
+                    </div>
+                    <div>
+                        <img src="./assets/bed.png" alt="Bedding">
+                        <p>Bedding</p>
+                    </div>
+                    <a href="">Shop now</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Delightful deals for everyone</h2>
+                <img src="./assets/categoryDeals.png" alt="Deals for everyone">
+                <a href="">Shop now</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-section">
+        <div class="card-grid">
+            <div class="product-card">
+                <h2 class="card-title">Top categories in Kitchen appliances</h2>
+                <div class="subcategory-grid">
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/cooker.png" alt="Cleaning Tools">
+                        <p class="subcategory-label">Cooker</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/coffee.png" alt="Home Storage">
+                        <p class="subcategory-label">Coffie</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/potsAndPans.png" alt="Home Decor">
+                        <p class="subcategory-label">Post and Pans</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/kettle.png" alt="Bedding">
+                        <p class="subcategory-label">Kettles</p>
+                    </div>
+                    <p><a href="">Shop Now</a></p>
+                </div>
+            </div>
+            <div class="product-card">
+                <h2 class="card-title">Toys under $25</h2>
+                <img class="card-image" src="./assets/category20$.png" alt="Deals in PCs">
+                <a href="">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <h2 class="card-title">Get your game on</h2>
+                <img class="card-image" src="./assets/categoryGame.png" alt="Deals in PCs">
+                <a href="">Shop now</a>
+            </div>
+            <div class="product-card">
+                <h2 class="card-title">Shop deals in Fashion</h2>
+                <div class="subcategory-grid">
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/jeans.png" alt="Cleaning Tools">
+                        <p class="subcategory-label">Jeans under $50</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/tops.png" alt="Home Storage">
+                        <p class="subcategory-label">Tops under $25</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/dress.png" alt="Home Decor">
+                        <p class="subcategory-label">Dresses under $30</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/shoes.png" alt="Bedding">
+                        <p class="subcategory-label">Shoes under $50</p>
+                    </div>
+                    <a href="">See all deals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
